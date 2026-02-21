@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Application Tracker</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-gray-100 p-6">
+  <header class="">
+    <div class="max-w-5xl mx-auto bg-white p8 rounded-xl border border-gray-200">
+    </div>
+    <!-- ================= TITLE ================= -->
+    <h1 class="text-3xl font-bold text-slate-800 mb-6">Job Application Tracker</h1>
+  </header>
+
+  <main>
+    <!-- ================= DASHBOARD ================= -->
+    <section class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+      <div class="bg-gray-50 p-6 rounded-lg border">
+        <p class="text-gray-500 text-sm">Total</p>
+        <h2 id="totalCount" class="text-3xl font-bold text-slate-800">0</h2>
+      </div>
+
+      <div class="bg-gray-50 p-6 rounded-lg border">
+        <p class="text-gray-500 text-sm">Interview</p>
+        <h2 id="interviewCount" class="text-3xl font-bold text-emerald-500">0</h2>
+      </div>
+
+      <div class="bg-gray-50 p-6 rounded-lg border">
+        <p class="text-gray-500 text-sm">Rejected</p>
+        <h2 id="rejectedCount" class="text-3xl font-bold text-red-500">0</h2>
+      </div>
+    </section>
+
+
+  </main>
+
+</body>
+
+</html>
