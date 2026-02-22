@@ -5,34 +5,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
     <title>Assignment 04</title>
 </head>
 
 <body class="bg-gray-100 p-6">
     <!-- ================= DASHBOARD ================= -->
-    <header class="max-w-7xl mx-auto bg-white p-10 rounded-xl border border-gray-200">
+    <header class="max-w-7xl mx-auto bg-gray p-10 rounded-xl border border-gray-200">
         <h1 class="text-3xl font-bold text-slate-800 mb-6">Job Application Tracker</h1>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
 
-            <div class="bg-gray-50 p-6 rounded-lg border">
+            <div class="bg-white p-6 rounded-lg ">
                 <p class="text-gray-500 text-sm">Total</p>
                 <h2 id="totalCount" class="text-3xl font-bold text-slate-800">8</h2>
             </div>
 
-            <div class="bg-gray-50 p-6 rounded-lg border">
+            <div class="bg-white p-6 rounded-lg ">
                 <p class="text-gray-500 text-sm">Interview</p>
                 <h2 id="interviewCount" class="text-3xl font-bold text-emerald-500">0</h2>
             </div>
 
-            <div class="bg-gray-50 p-6 rounded-lg border">
+            <div class="bg-white p-6 rounded-lg ">
                 <p class="text-gray-500 text-sm">Rejected</p>
                 <h2 id="rejectedCount" class="text-3xl font-bold text-red-500">0</h2>
             </div>
         </div>
     </header>
 
-    <main class="max-w-7xl mx-auto bg-white p-10 rounded-xl border border-gray-200">
+    <main class="max-w-7xl mx-auto bg-gray p-10 rounded-xl border border-gray-200">
 
         <!-- ================= AVAILABLE JOBS ================= -->
         <div class="flex justify-between items-center mb-4">
@@ -57,12 +61,14 @@
         <!-- Empty State -->
         <div id="emptyState" class="hidden text-center py-12">
             <div class="text-5xl mb-3">
-                <img src="asset/icon0.PNG" alt="">
+                <img class="mx-auto" src="asset/icon0.PNG" alt="">
             </div>
             <h3 class="text-lg font-semibold text-gray-600">No jobs available</h3>
             <p class="text-sm text-gray-400">Jobs you mark will appear here.</p>
         </div>
     </main>
+    
+    <script src="scripts/script.js"></script>
 </body>
 
 </html>
