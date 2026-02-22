@@ -2,76 +2,67 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <title>Job Application Tracker</title>
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Assignment 04</title>
 </head>
 
-<body class="bg-gray-200 p-25">
-
-  <header class="">
-    <div class="max-w-5xl mx-auto bg-white p8 rounded-xl border border-gray-200">
-
-    </div>
-    <!-- ================= TITLE ================= -->
-    <h1 class="text-3xl font-bold text-slate-800 mb-6">Job Application Tracker</h1>
-  </header>
-
-  <main>
+<body class="bg-gray-100 p-6">
     <!-- ================= DASHBOARD ================= -->
-    <section class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
-      <div class="bg-gray-50 p-6 rounded-lg border">
-        <p class="text-gray-500 text-sm">Total</p>
-        <h2 id="totalCount" class="text-3xl font-bold text-slate-800">0</h2>
-      </div>
+    <header class="max-w-7xl mx-auto bg-white p-10 rounded-xl border border-gray-200">
+        <h1 class="text-3xl font-bold text-slate-800 mb-6">Job Application Tracker</h1>
 
-      <div class="bg-gray-50 p-6 rounded-lg border">
-        <p class="text-gray-500 text-sm">Interview</p>
-        <h2 id="interviewCount" class="text-3xl font-bold text-emerald-500">0</h2>
-      </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
 
-      <div class="bg-gray-50 p-6 rounded-lg border">
-        <p class="text-gray-500 text-sm">Rejected</p>
-        <h2 id="rejectedCount" class="text-3xl font-bold text-red-500">0</h2>
-      </div>
-    </section>
+            <div class="bg-gray-50 p-6 rounded-lg border">
+                <p class="text-gray-500 text-sm">Total</p>
+                <h2 id="totalCount" class="text-3xl font-bold text-slate-800">8</h2>
+            </div>
 
-    <section>
-      <!-- ================= HEADER ================= -->
-      <div class="flex justify-between items-center mb-4">
-        <h2 class="text-xl font-semibold text-slate-800">Available Jobs</h2>
-        <span id="sectionCount" class="text-gray-500 text-sm">0 Jobs</span>
-      </div>
-      <!-- ================= 3TABS ================= -->
+            <div class="bg-gray-50 p-6 rounded-lg border">
+                <p class="text-gray-500 text-sm">Interview</p>
+                <h2 id="interviewCount" class="text-3xl font-bold text-emerald-500">0</h2>
+            </div>
 
-      <div class="flex gap-3 mb-6">
-        <button data-tab="all" class="tab px-4 py-2 bg-indigo-600 text-white rounded-lg text-sm">All</button>
-        <button data-tab="interview"
-          class="tab px-4 py-2 bg-gray-200 text-gray-700 rounded-lg text-sm">Interview</button>
-        <button data-tab="rejected" class="tab px-4 py-2 bg-gray-200 text-gray-700 rounded-lg text-sm">Rejected</button>
-      </div>
+            <div class="bg-gray-50 p-6 rounded-lg border">
+                <p class="text-gray-500 text-sm">Rejected</p>
+                <h2 id="rejectedCount" class="text-3xl font-bold text-red-500">0</h2>
+            </div>
+        </div>
+    </header>
 
-      <!-- ================= JOB CONTAINER ================= -->
-      <div id="jobsContainer" class="space-y-4"></div>
+    <main class="max-w-7xl mx-auto bg-white p-10 rounded-xl border border-gray-200">
 
-      <!-- ================= EMPTY STATE ================= -->
-      <div id="emptyState" class="hidden text-center py-12">
-        <div class="text-5xl mb-3">📭</div>
-        <h3 class="text-lg font-semibold text-gray-600">No jobs available</h3>
-        <p class="text-sm text-gray-400">Jobs you mark will appear here.</p>
-      </div>
+        <!-- ================= AVAILABLE JOBS ================= -->
+        <div class="flex justify-between items-center mb-4">
+            <h2 class="text-xl font-semibold text-slate-800">Available Jobs</h2>
+            <span id="sectionCount" class="text-gray-500">8 Jobs</span>
+        </div>
 
-    </section>
+        <!-- Tabs -->
+        <div class="flex gap-3 mb-6">
+            <button data-tab="all" class="tab px-4 py-2 bg-indigo-600 text-white rounded-lg text-sm">All</button>
+            <button data-tab="interview"
+                class="tab px-4 py-2 bg-gray-200 text-gray-700 rounded-lg text-sm">Interview</button>
+            <button data-tab="rejected"
+                class="tab px-4 py-2 bg-gray-200 text-gray-700 rounded-lg text-sm">Rejected</button>
+        </div>
 
+        <!-- Job Container -->
+        <div id="jobsContainer" class="space-y-4">
 
-  </main>
+        </div>
 
-
-  <script src="scripts/script.js"></script>
+        <!-- Empty State -->
+        <div id="emptyState" class="hidden text-center py-12">
+            <div class="text-5xl mb-3">
+                <img src="asset/icon0.PNG" alt="">
+            </div>
+            <h3 class="text-lg font-semibold text-gray-600">No jobs available</h3>
+            <p class="text-sm text-gray-400">Jobs you mark will appear here.</p>
+        </div>
+    </main>
 </body>
 
 </html>
