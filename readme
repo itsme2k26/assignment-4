@@ -3,9 +3,9 @@
 Ans: => 1
     the difference between getElementById & getElementsByClassName is 
     1.getElementById is specific single  elements selecting method which is get by using getElementById
-    2.getElementsByClassName is multiple elements selecting method.
+    2.getElementsByClassName is multiple elements selecting method. by using with class
     3.querySelector is as like as id type, for single elements .selector
-    4.querySelectorAll is provide full dom you can access multiple things using selector
+    4.querySelectorAll is provide full dom you can access multiple things using any selector
 -------------------------------------------------------------------------------------------
 
 2. How do you create and insert a new element into the DOM? ==>
