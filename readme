@@ -6,3 +6,13 @@ Ans: => 1
     2.getElementsByClassName is multiple elements selecting method.
     3.querySelector is as like as id type, for single elements .selector
     4.querySelectorAll is provide full dom you can access multiple things using selector
+
+
+
+2.How do you create and insert a new element into the DOM? ==>
+
+Ans: ==> 2
+    At first get an existing element as a parent , 
+        then create a new element {div or li or a or section etc} with variable
+            then get parent.appendChild(variable);
+    Done!
